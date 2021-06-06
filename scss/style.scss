@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=RocknRoll+One&display=swap');
+@import "style_variables";
+
+html{
+    font-size: 62.5%;
+}
+.wrap{
+    width: 90vw;
+    margin: 3rem auto;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    word-break: keep-all;
+}
+.logo{
+    width: 10rem;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .header_box{
+        display: flex;
+        align-items: center;
+        .text_box{
+            margin-left: 2rem;
+        }
+        .company_name{
+            font-family: $main_font, sans-serif;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            &::after{
+                content: '～RESTAURANT WILDCAT HOUSE～';
+                font-size: 2rem;
+                font-family: $sub_font, cursive;
+            }
+        }
+        .header_text{
+            font-size: 1.4rem;
+            width: 22rem;
+        }
+    }
+    .telephone{
+        padding: 2rem;
+        font-weight: bold;
+        color: #fff;
+        background-color: $point_color;
+        border-radius: 5rem;
+        .fa-phone{
+            margin-right: 1.5rem;
+        }
+    }
+}
+.nav_menu{
+    background-color: $main_color;
+    .menu_list{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        .list_item{
+            font-family: 'RocknRoll One', sans-serif;
+            font-size: 2rem;
+            padding: 1rem 2rem;
+        }
+        .header_nav{
+            &:hover{
+                color: #fff;
+                background-color: $point_color;
+            }
+        }
+    }
+}
+
+
+.top_img{
+    width: 90vw;
+}
+
+.contents_title{
+    font-family: $main_font, sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    background-color: $main_color;
+    padding: 3rem 0;
+    margin: 2rem 0;
+}
+
+.pickup_contents{
+    display: flex;
+    justify-content: space-around;
+    .pickup_box{
+        width: 25%;
+        margin: 3rem 0;
+        margin-bottom: 6rem;
+        .pickup_img{
+            width: 100%;
+            height: 80%;
+            object-fit: cover;
+        }
+        .pickup_text{
+            margin: 1rem;
+        }
+    }
+}
+
+.product_contents{
+    display: flex;
+    flex-direction: column;
+    .product_box{
+        display: flex;
+        align-items: center;
+        padding: 0 2rem;
+        .product_img{
+            width: 40%;
+        }
+        .product_text_box{
+            width: 50%;
+            margin: 0 auto;
+            .product_text{
+                margin-bottom: 2rem;
+            }
+        }
+    }
+    .text_left{
+        flex-direction: row-reverse;
+    }
+}
+
+iframe {
+    width: 45%;
+}
+.detailed_contents{
+    width: 60vw;
+    margin: 0 auto;
+    word-break: break-all;
+    .detailed_img{
+        float: left;
+        width: 40%;
+        margin-bottom: 4rem;
+        margin-right: 4rem;
+    }
+}
+
+#news{
+    clear: both;
+    .news_contents{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .news_box{
+            margin:1rem 0;
+            .news_date{
+                margin-right: 2rem;
+            }
+            .news_text{
+                margin-left: 2rem;
+            }
+        }
+    }
+}
+
+.company_contents{
+    display: flex;
+    justify-content: space-around;
+    .company_text_box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .company_text{
+            margin: 1rem 0;
+        }
+    }
+}
+
+input[type="text"],
+textarea {
+    border: 1px solid #aeaeae;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+.contact_contents {
+    padding: 0 2rem;
+    .contact_form {
+        width: 55%;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+        .form_item,
+        .form_input{
+        padding: 2rem;
+        background: $main_color;
+        border: 3px dashed #fff;
+        }
+        .form_item{
+            width: 30%;
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+    .btn_area{
+        text-align: center;
+        .submit_btn{
+            width: 27rem;
+            height: 5rem;
+            background: green;
+            color: #fff;
+            font-weight: bold;
+            border-radius: 5rem;
+            margin-bottom: 4rem;
+        }
+    }
+}

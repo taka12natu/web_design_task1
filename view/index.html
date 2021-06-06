@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>注文の多い料理店</title>
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/destyle.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <!-- 全体のラップ -->
@@ -12,30 +15,35 @@
         <!-- ヘッダー -->
         <header>
             <div class="header">
-                <img src="../img/logo.jpg" alt="ロゴ" class="logo">
-                <p class="header_text">キャッチコピー</p>
-                <a href="0120-0000-0000" class="telephone">電話：0120-0000-0000</a>
+                <div class="header_box">
+                    <img src="../img/logo.png" alt="ロゴ" class="logo">
+                    <div class="text_box">
+                        <p class="company_name">西洋料理店山猫軒</p>
+                        <p class="header_text">どなたもどうぞお入りください。決してご遠慮はありません。</p>
+                    </div>
+                </div>
+                <a href="0120-0000-0000" class="telephone"><i class="fas fa-phone"></i>0120-0000-0000</a>
             </div>
             <!-- ナビメニュー -->
             <nav class="nav_menu">
                 <ul class="menu_list">
-                    <li><a href="#pickup">コンテンツ１</a></li>
-                    <li><a href="#product">コンテンツ２</a></li>
-                    <li><a href="#detailed">当店のこだわり</a></li>
-                    <li><a href="#news">新着情報</a></li>
-                    <li><a href="#company">会社概要</a></li>
-                    <li><a href="#contact">お問い合わせ</a></li>
+                    <li class="list_item header_nav"><a href="#pickup">picp up</a></li>
+                    <li class="list_item header_nav"><a href="#product">当店について</a></li>
+                    <li class="list_item header_nav"><a href="#detailed">当店のこだわり</a></li>
+                    <li class="list_item header_nav"><a href="#news">新着情報</a></li>
+                    <li class="list_item header_nav"><a href="#company">会社概要</a></li>
+                    <li class="list_item header_nav"><a href="#contact">お問い合わせ</a></li>
                 </ul>
             </nav>
         </header>
         <!-- ヘッダーここまで -->
         <!-- トップ画像 -->
-        <div class="pickup_contents" id="pickup">
+        <div class="main_visual">
             <img src="../img/top_img.jpg" alt="注文の多い料理店" class="top_img">
         </div>
         <!-- ピックアップ -->
-        <div id="product">
-            <h1 class="pickup_title">pick up</h1>
+        <div id="pickup">
+            <h1 class="contents_title">pick up</h1>
             <div class="pickup_contents">
                 <div class="pickup_box">
                     <img src="../img/meat.jpg" alt="肉料理" class="pickup_img">
@@ -53,33 +61,56 @@
         </div>
         <!-- 商品紹介 -->
         <div id="product">
-            <h1 class="product_title">商品紹介</h1>
+            <h1 class="contents_title">当店について</h1>
             <div class="product_contents">
                 <div class="product_box">
                     <img src="../img/signboard.jpg" alt="看板" class="product_img">
-                    <p class="product_text">そして二人はその扉をあけようとしますと、上に黄いろな字でこう書いてありました。「当軒は注文の多い料理店ですからどうかそこはご承知ください」</p>
+                    <div class="product_text_box">
+                        <p class="product_text">そして二人はその扉をあけようとしますと、上に黄いろな字でこう書いてありました。「当軒は注文の多い料理店ですからどうかそこはご承知ください」</p>
+                        <p class="product_text">二人はそこで、ひどくよろこんで言いました。
+                        「こいつはどうだ、やっぱり世の中はうまくできてるねえ、きょう一日なんぎしたけれど、こんどはこんないいこともある。このうちは料理店だけれどもただでご馳走ちそうするんだぜ。」</p>
+                        <p class="product_text">二人は戸を押して、なかへ入りました。そこはすぐ廊下になっていました。その硝子戸の裏側には、金文字でこうなっていました。
+                            「ことに肥ったお方や若いお方は、大歓迎いたします」
+                            　二人は大歓迎というので、もう大よろこびです。</p>
+                    </div>
                 </div>
                 <div class="product_box text_left">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/PPwaquPK2tY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <p class="product_text">そして二人はその扉をあけようとしますと、上に黄いろな字でこう書いてありました。「当軒は注文の多い料理店ですからどうかそこはご承知ください」</p>
+                    <div class="product_text_box">
+                        <p class="product_text">そして二人はその扉をあけようとしますと、上に黄いろな字でこう書いてありました。「当軒は注文の多い料理店ですからどうかそこはご承知ください」</p>
+                        <p class="product_text">二人はそこで、ひどくよろこんで言いました。
+                        「こいつはどうだ、やっぱり世の中はうまくできてるねえ、きょう一日なんぎしたけれど、こんどはこんないいこともある。このうちは料理店だけれどもただでご馳走ちそうするんだぜ。」</p>
+                        <p class="product_text">二人は戸を押して、なかへ入りました。そこはすぐ廊下になっていました。その硝子戸の裏側には、金文字でこうなっていました。
+                            「ことに肥ったお方や若いお方は、大歓迎いたします」
+                            　二人は大歓迎というので、もう大よろこびです。</p>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- 当店のこだわり -->
         <div id="detailed">
-            <h1 class="detailed_title">当店のこだわり</h1>
+            <h1 class="contents_title">当店のこだわり</h1>
             <div class="detailed_contents">
                 <img src="../img/signboard.jpg" alt="看板" class="detailed_img">
                 <p class="detailed_text">二人の若い紳士が、すっかりイギリスの兵隊のかたちをして、ぴかぴかする鉄砲をかついで、白熊のような犬を二疋ひきつれて、だいぶ山奥の、木の葉のかさかさしたとこを、こんなことを云いいながら、あるいておりました。
-                    「ぜんたい、ここらの山は怪けしからんね。鳥も獣けものも一疋も居やがらん。なんでも構わないから、早くタンタアーンと、やって見たいもんだなあ。」
-                    「鹿しかの黄いろな横っ腹なんぞに、二三発お見舞みまいもうしたら、ずいぶん痛快だろうねえ。くるくるまわって、それからどたっと倒たおれるだろうねえ。」
+                    「ぜんたい、ここらの山は怪しからんね。鳥も獣も一疋も居やがらん。なんでも構わないから、早くタンタアーンと、やって見たいもんだなあ。」
+                    「鹿の黄いろな横っ腹なんぞに、二三発お見舞もうしたら、ずいぶん痛快だろうねえ。くるくるまわって、それからどたっと倒たおれるだろうねえ。」
                     　それはだいぶの山奥でした。案内してきた専門の鉄砲打ちも、ちょっとまごついて、どこかへ行ってしまったくらいの山奥でした。
-                    　それに、あんまり山が物凄ものすごいので、その白熊のような犬が、二疋いっしょにめまいを起こして、しばらく吠うなって、それから泡を吐はいて死んでしまいました。</p>
+                    　それに、あんまり山が物凄いので、その白熊のような犬が、二疋いっしょにめまいを起こして、しばらく吠って、それから泡を吐いて死んでしまいました。
+                    「じつにぼくは、二千四百円の損害だ」と一人の紳士が、その犬の眼ぶたを、ちょっとかえしてみて言いました。
+                    「ぼくは二千八百円の損害だ。」と、もひとりが、くやしそうに、あたまをまげて言いました。
+                    　はじめの紳士は、すこし顔いろを悪くして、じっと、もひとりの紳士の、顔つきを見ながら云いました。
+                    「ぼくはもう戻ろうとおもう。」
+                    「さあ、ぼくもちょうど寒くはなったし腹は空いてきたし戻ろうとおもう。」
+                    「そいじゃ、これで切りあげよう。なあに戻りに、昨日の宿屋で、山鳥を拾円も買って帰ればいい。」
+                    「兎もでていたねえ。そうすれば結局おんなじこった。では帰ろうじゃないか」
+                    　ところがどうも困ったことは、どっちへ行けば戻れるのか、いっこうに見当がつかなくなっていました。
+                    　風がどうと吹いてきて、草はざわざわ、木の葉はかさかさ、木はごとんごとんと鳴りました。</p>
             </div>
         </div>
         <!-- 新着情報 -->
         <div id="news">
-            <h1 class="news_title">新着情報</h1>
+            <h1 class="contents_title">新着情報</h1>
             <div class="news_contents">
                 <div class="news_box">
                     <span class="news_date">2021/06/05</span>
@@ -101,7 +132,7 @@
         </div>
         <!-- 会社概要 -->
         <div id="company">
-            <h1 class="company_title">会社概要</h1>
+            <h1 class="contents_title">会社概要</h1>
             <div class="company_contents">
                 <div class="company_text_box">
                     <span class="company_text">西洋料理 山猫軒</span>
@@ -113,27 +144,45 @@
                 <iframe class="company_map"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3083.1016060410966!2d141.16048121536525!3d39.39920727949641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8f60a1df7e3215%3A0x7619220368e9cca4!2z5a6u5rKi6LOi5rK76KiY5b-16aSo!5e0!3m2!1sja!2sjp!4v1622918510282!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
+        <!-- お問い合わせ -->
         <div id="contact">
-            <h1 class="contact_title">お問い合わせ</h1>
+            <h1 class="contents_title">お問い合わせ</h1>
             <div class="contact_contents">
-                <input type="text" name="" id="">
-                <input type="text" name="" id="">
-                <input type="text" name="" id="">
-                <input type="button" value="送信">
+                <table class="contact_form">
+                    <tr>
+                        <td class="form_item">お名前</td>
+                        <td class="form_input"><input type="text" name="name" id=""></td>
+                    </tr>
+                    <tr>
+                        <td class="form_item">メールアドレス</td>
+                        <td class="form_input"><input type="text" name="address" id=""></td>
+                    </tr>
+                    <tr>
+                        <td class="form_item">電話番号</td>
+                        <td class="form_input"><input type="text" name="telephone" id=""></td>
+                    </tr>
+                    <tr>
+                        <td class="form_item">お問い合わせ内容</td>
+                        <td class="form_input"><textarea name="message" id="" cols="10" rows="10">ここに記入してください</textarea></td>
+                    </tr>
+                </table>
+                <div class="btn_area">
+                    <button type="submit" class="submit_btn">送信</button>
+                </div>
             </div>
         </div>
 
         <!-- フッター -->
         <footer class="footer">
-            <img src="../img/logo.jpg" alt="ロゴ" class="logo">
             <nav class="nav_menu">
                 <ul class="menu_list">
-                    <li><a href="#pickup">コンテンツ１</a></li>
-                    <li><a href="#product">コンテンツ２</a></li>
-                    <li><a href="#detailed">当店のこだわり</a></li>
-                    <li><a href="#news">新着情報</a></li>
-                    <li><a href="#company">会社概要</a></li>
-                    <li><a href="#contact">お問い合わせ</a></li>
+                    <img src="../img/logo.png" alt="ロゴ" class="logo">
+                    <li class="list_item"><a href="#pickup">picp up</a></li>
+                    <li class="list_item"><a href="#product">当店について</a></li>
+                    <li class="list_item"><a href="#detailed">当店のこだわり</a></li>
+                    <li class="list_item"><a href="#news">新着情報</a></li>
+                    <li class="list_item"><a href="#company">会社概要</a></li>
+                    <li class="list_item"><a href="#contact">お問い合わせ</a></li>
                 </ul>
             </nav>
         </footer>
