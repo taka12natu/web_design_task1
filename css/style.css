@@ -1,1 +1,60 @@
 @charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ 
+header {
+    width: 90%;
+    height: 120px;
+    margin: 0 auto;
+    background-color: red;
+}
+.header-box {
+    height: 80px;
+    background-color: yellow;
+}
+.logo {
+    width: 20%;
+    height: 80px;
+    background-color: blue;
+    float: left;
+}
+.shop_name {
+    width: 30%;
+    height: 80px;
+    background-color: green;
+    float: left;
+}
+.phone {
+    width: 30%;
+    height: 80px;
+    background-color: purple;
+    float: right;
+}
+.header-menu {
+    text-align: center;
+}
+.menu-item {
+    list-style: none;
+    display: inline-block;
+    background-color: aqua;
+    width: 15%;
+    margin: 10px 10px;
+}
+
+.main-content {
+    width: 90%;
+    height: 1500px;
+    background-color: burlywood;
+    margin: 0 auto;
+}
+.main-visual {
+    max-width: 100%;
+	background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../img/top_img.jpg);
+}
