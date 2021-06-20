@@ -171,7 +171,9 @@ header {
 }
 .info-body {
     text-align: center;
+    height: 300px;
     margin: 40px 0;
+    overflow-y: scroll;
 }
 .info-text {
     list-style: none;
@@ -243,7 +245,7 @@ header {
 }
 footer {
     width: 90%;
-    height: 80px;
+    height: 100px;
     margin: 0 auto;
     background-color: #e6ffe6;
 }
@@ -253,4 +255,8 @@ footer {
     font-size: 20px;
     justify-content: space-between;
     padding-top: 15px;
+}
+.copyright {
+    text-align: right;
+    margin-right: 30px;
 }
