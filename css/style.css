@@ -8,47 +8,74 @@
  
 header {
     width: 90%;
-    height: 120px;
+    height: 150px;
     margin: 0 auto;
-    background-color: red;
+    background-image: url(../img/background.jpg);
+    background-color:rgba(255,255,255,0.8);
+    background-blend-mode:lighten;
 }
 .header-box {
-    height: 80px;
-    background-color: yellow;
+    height: 100px;
 }
 .logo {
-    width: 20%;
+    width: 100px;
     height: 80px;
-    background-color: blue;
     float: left;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../img/logo.png);
 }
 .shop_name {
-    width: 30%;
+    margin-left: 10px;
     height: 80px;
-    background-color: green;
     float: left;
 }
-.phone {
-    width: 30%;
-    height: 80px;
-    background-color: purple;
-    float: right;
+.shop-title {
+    font-size: 28px;
 }
-.menu {
+.shop-subtitle {
+    font-size: 14px;
+    text-align: end;
+}
+.phone {
+    width: 280px;
+    height: 60px;
+    background-color:green;
+    color: #fff;
+    font-weight: bold;
+    float: right;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 18px;
+    border-radius: 100vh;
+    border: none;
+    appearance: none;
+    cursor: pointer;
+}
+.header-menu {
     display: flex;
+    height: 50px;
+    font-size: 18px;
     justify-content: space-between;
+    background-color: #e6ffe6;
 }
 .menu-item {
     list-style: none;
     height: 100%;
     margin: 10px auto;
 }
-
+.menu-link {
+    text-decoration: none;
+}
 .main-content {
     width: 90%;
-    background-color: burlywood;
     margin: 0 auto;
     padding-bottom: 30px;
+    background-image: url(../img/background.jpg);
+    background-color:rgba(255,255,255,0.8);
+    background-blend-mode:lighten;
 }
 .main-visual {
     height: 900px;
@@ -64,17 +91,14 @@ header {
     margin: 0 auto;
     padding-top: 20px;
     text-align: center;
-    background-color: coral;
+    background-color: #e6ffe6;
 }
 .pickup-body {
     display: flex;
-    height: 450px;
     width: 100%;
     margin: 30px auto;
-    background-color: darkcyan;
 }
 .pickup-box {
-    background-color: darkgoldenrod;
     width: 30%;
     height: 100%;
     margin: 0 30px;
@@ -85,29 +109,35 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+.img-meat {
     background-image: url(../img/meat.jpg);
+}
+.img-cutlery {
+    background-image: url(../img/cutlery.jpg);
+}
+.img-glass {
+    background-image: url(../img/glass.jpg);
 }
 .pickup-box-text {
     padding: 10px;
 }
 .about-body {
-    height: 800px;
     width: 100%;
     margin: 30px auto;
-    background-color: darkcyan;
 }
 .about-box {
     display: flex;
-    background-color: darkgoldenrod;
-    width: 100%;
+    width: 95%;
     height: 50%;
+    margin: 0 auto;
 }
 .about-box-img {
     width: 40%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(../img/meat.jpg);
+    background-image: url(../img/signboard.jpg);
 }
 .about-box-movie {
     width: 50%;
@@ -121,16 +151,13 @@ header {
     margin: 5%;
 }
 .pr-body {
-    height: 500px;
     width: 100%;
     margin: 30px auto;
-    background-color: darkcyan;
 }
 .pr-box {
     width: 70%;
     margin: 0 15%;
     height: 100%;
-    background-color: darkgrey;
 }
 .pr-box-img {
     width: 40%;
@@ -140,7 +167,7 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(../img/meat.jpg);
+    background-image: url(../img/signboard.jpg);
 }
 .info-body {
     text-align: center;
@@ -171,15 +198,23 @@ header {
     width: 50%;
     margin: 30px auto;
     border-collapse:  collapse;
+    border-color: white;
+    border-width: 3px;
+    border-style: dashed;
+    background-color: #e6ffe6;
 }
 .contact-name {
-    border: solid 1px;
+    border: solid 3px;
+    border-style: dashed;
+    border-color: white;
     padding: 25px 0;
     width: 30%;
     vertical-align: top;
 }
 .contact-input {
-    border: solid 1px;
+    border: solid 3px;
+    border-style: dashed;
+    border-color: white;
     text-align: center;
     width: 70%;
     padding: 20px;
@@ -200,7 +235,7 @@ header {
     display: block;
     margin: 0 auto;
     font-size: 16px;
-    padding: 15px;
+    padding: 13px;
     border-radius: 100vh;
     border: none;
     appearance: none;
@@ -210,5 +245,12 @@ footer {
     width: 90%;
     height: 80px;
     margin: 0 auto;
-    background-color: red;
+    background-color: #e6ffe6;
+}
+.footer-menu {
+    display: flex;
+    height: 80px;
+    font-size: 20px;
+    justify-content: space-between;
+    padding-top: 15px;
 }
