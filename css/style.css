@@ -34,27 +34,181 @@ header {
     background-color: purple;
     float: right;
 }
-.header-menu {
-    text-align: center;
+.menu {
+    display: flex;
+    justify-content: space-between;
 }
 .menu-item {
     list-style: none;
-    display: inline-block;
-    background-color: aqua;
-    width: 15%;
-    margin: 10px 10px;
+    height: 100%;
+    margin: 10px auto;
 }
 
 .main-content {
     width: 90%;
-    height: 1500px;
     background-color: burlywood;
     margin: 0 auto;
+    padding-bottom: 30px;
 }
 .main-visual {
+    height: 900px;
     max-width: 100%;
-	background-position: center center;
+	background-position: top;
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url(../img/top_img.jpg);
+}
+.headline {
+    height: 80px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: center;
+    background-color: coral;
+}
+.pickup-body {
+    display: flex;
+    height: 450px;
+    width: 100%;
+    margin: 30px auto;
+    background-color: darkcyan;
+}
+.pickup-box {
+    background-color: darkgoldenrod;
+    width: 30%;
+    height: 100%;
+    margin: 0 30px;
+}
+.pickup-box-img {
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../img/meat.jpg);
+}
+.pickup-box-text {
+    padding: 10px;
+}
+.about-body {
+    height: 800px;
+    width: 100%;
+    margin: 30px auto;
+    background-color: darkcyan;
+}
+.about-box {
+    display: flex;
+    background-color: darkgoldenrod;
+    width: 100%;
+    height: 50%;
+}
+.about-box-img {
+    width: 40%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../img/meat.jpg);
+}
+.about-box-movie {
+    width: 50%;
+    aspect-ratio: 16 / 9;
+  }
+.about-box-movie iframe {
+    width: 100%;
+    height: 100%;
+  }
+.about-box-text {
+    margin: 5%;
+}
+.pr-body {
+    height: 500px;
+    width: 100%;
+    margin: 30px auto;
+    background-color: darkcyan;
+}
+.pr-box {
+    width: 70%;
+    margin: 0 15%;
+    height: 100%;
+    background-color: darkgrey;
+}
+.pr-box-img {
+    width: 40%;
+    height: 300px;
+    float: left;
+    margin: 0 20px 20px 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../img/meat.jpg);
+}
+.info-body {
+    text-align: center;
+    margin: 40px 0;
+}
+.info-text {
+    list-style: none;
+    margin: 20px;
+}
+.company-body {
+    display: flex;
+    width: 80%;
+    margin: 30px auto;
+}
+.company-box-left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.company-box-right {
+    width: 50%;
+}
+.company-text {
+    list-style: none;
+    margin: 20px;
+}
+.contact-table {
+    width: 50%;
+    margin: 30px auto;
+    border-collapse:  collapse;
+}
+.contact-name {
+    border: solid 1px;
+    padding: 25px 0;
+    width: 30%;
+    vertical-align: top;
+}
+.contact-input {
+    border: solid 1px;
+    text-align: center;
+    width: 70%;
+    padding: 20px;
+}
+.contact-input-box {
+    width: 100%;
+    height: 30px;
+}
+.contact-input-lbox {
+    width: 100%;
+}
+.contact-submit {
+    width: 300px;
+    display: block;
+    background-color:green;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+    font-size: 16px;
+    padding: 15px;
+    border-radius: 100vh;
+    border: none;
+    appearance: none;
+    cursor: pointer;
+}
+footer {
+    width: 90%;
+    height: 80px;
+    margin: 0 auto;
+    background-color: red;
 }
