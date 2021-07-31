@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>注文の多い料理店</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
@@ -10,8 +11,8 @@
 <body>
     <header>
         <div class="header-box"> 
-          <div class="logo"></div>
-          <div class="shop_name">
+            <img src="./img/logo.png" alt="" class="logo">               
+            <div class="shop_name">
               <p class="shop-title">西洋料理店山猫軒
                 <span class="shop-subtitle">〜RESTAURANT WILDCAT HOUSE〜</span>
                 </p>
@@ -34,15 +35,15 @@
       </nav>
     </header>
     
-    <div class="main-content">
-        <div class="main-visual"></div>
+    <main class="main-content">
+        <img src="./img/top_img.jpg" alt="" class="main-visual">               
         <section id="pick-up">
             <div class="headline">
                 <h1>pick up</h1>
             </div>
             <div class="pickup-body">
                 <div class="pickup-box">
-                    <div class="pickup-box-img img-meat"></div>
+                    <img src="./img/meat.jpg" alt="" class="pickup-box-img">               
                     <div class="pickup-box-text">
                         玄関は白い瀬戸の煉瓦で組んで、<br>
                         実に立派なもんです。<br>
@@ -51,7 +52,7 @@
                     </div>
                 </div>
                 <div class="pickup-box">
-                    <div class="pickup-box-img img-cutlery"></div>
+                    <img src="./img/cutlery.jpg" alt="" class="pickup-box-img">               
                     <div class="pickup-box-text">
                         玄関は白い瀬戸の煉瓦で組んで、<br>
                         実に立派なもんです。<br>
@@ -60,7 +61,7 @@
                     </div>
                 </div>
                 <div class="pickup-box">
-                    <div class="pickup-box-img img-glass"></div>
+                    <img src="./img/glass.jpg" alt="" class="pickup-box-img">               
                     <div class="pickup-box-text">
                         玄関は白い瀬戸の煉瓦で組んで、<br>
                         実に立派なもんです。<br>
@@ -75,9 +76,9 @@
                 <h1>当店について</h1>
             </div>
             <div class="about-body">
-                <div class="about-box">
-                    <div class="about-box-img"></div>
-                    <div class="about-box-text">
+                <div class="about-box-u">
+                    <img src="./img/signboard.jpg" alt="" class="about-box-img">               
+                    <div class="about-box-u-text">
                         <p>
                             そして二人はその扉をあけようとしますと、<br>
                             上に黄いろな字でこう書いてありました。<br>
@@ -95,8 +96,8 @@
                         </p>
                     </div>
                 </div>
-                <div class="about-box">
-                    <div class="about-box-text">
+                <div class="about-box-l">
+                    <div class="about-box-l-text">
                         <p>
                             そして二人はその扉をあけようとしますと、<br>
                             上に黄いろな字でこう書いてありました。<br>
@@ -125,7 +126,7 @@
             </div>
             <div class="pr-body">
                 <div class="pr-box">
-                    <div class="pr-box-img"></div>
+                    <img src="./img/signboard.jpg" alt="" class="pr-box-img">               
                     <div class="pr-box-text">
                         <p>
                             二人の若い紳士が、すっかりイギリスの兵隊のかたちをし
@@ -230,10 +231,10 @@
                 <input class="contact-submit" type="submit" value="送信">
             </form>
         </section>
-    </div>
+    </main>
     <footer>
-        <nav>
-            <div class="footer-logo"></div>
+        <nav class="footer_nav">
+            <img src="./img/logo.png" alt="" class="footer-logo">               
             <ul class="footer-menu">
                 <li class="footer-menu-item"><a href="index.html#pick-up" class="menu-link">pick up</a></li>
                 <li class="footer-menu-item"><a href="index.html#about" class="menu-link">当店について</a></li>

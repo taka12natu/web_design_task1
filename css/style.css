@@ -8,28 +8,25 @@
  
 header {
     width: 90%;
-    height: 150px;
     margin: 0 auto;
-    background-image: url(../img/background.jpg);
     background-color:rgba(255,255,255,0.8);
     background-blend-mode:lighten;
+    background-image: url(../img/background.jpg);
 }
 .header-box {
     height: 100px;
+    display: flex;
 }
 .logo {
     width: 100px;
     height: 80px;
-    float: left;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(../img/logo.png);
 }
 .shop_name {
     margin-left: 10px;
     height: 80px;
-    float: left;
 }
 .shop-title {
     font-size: 28px;
@@ -44,9 +41,9 @@ header {
     background-color:green;
     color: #fff;
     font-weight: bold;
-    float: right;
     text-align: center;
     margin-top: 20px;
+    margin-left: auto;
     font-size: 18px;
     padding: 18px;
     border-radius: 100vh;
@@ -83,9 +80,9 @@ header {
     width: 90%;
     margin: 0 auto;
     padding-bottom: 30px;
-    background-image: url(../img/background.jpg);
     background-color:rgba(255,255,255,0.8);
     background-blend-mode:lighten;
+    background-image: url(../img/background.jpg);
 }
 .main-visual {
     height: 900px;
@@ -93,7 +90,6 @@ header {
 	background-position: top;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url(../img/top_img.jpg);
 }
 .headline {
     height: 80px;
@@ -106,12 +102,12 @@ header {
 .pickup-body {
     display: flex;
     width: 100%;
-    margin: 30px auto;
+    margin-top: 20px;
 }
 .pickup-box {
     width: 30%;
     height: 100%;
-    margin: 0 30px;
+    margin: 0 auto;
 }
 .pickup-box-img {
     height: 300px;
@@ -120,15 +116,6 @@ header {
     background-position: center;
     background-repeat: no-repeat;
 }
-.img-meat {
-    background-image: url(../img/meat.jpg);
-}
-.img-cutlery {
-    background-image: url(../img/cutlery.jpg);
-}
-.img-glass {
-    background-image: url(../img/glass.jpg);
-}
 .pickup-box-text {
     padding: 10px;
 }
@@ -136,7 +123,7 @@ header {
     width: 100%;
     margin: 30px auto;
 }
-.about-box {
+.about-box-u, .about-box-l {
     display: flex;
     width: 95%;
     height: 50%;
@@ -147,7 +134,6 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(../img/signboard.jpg);
 }
 .about-box-movie {
     width: 50%;
@@ -157,7 +143,7 @@ header {
     width: 100%;
     height: 100%;
   }
-.about-box-text {
+.about-box-u-text, .about-box-l-text {
     margin: 5%;
 }
 .pr-body {
@@ -177,7 +163,6 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(../img/signboard.jpg);
 }
 .info-body {
     text-align: center;
@@ -255,25 +240,26 @@ header {
 }
 footer {
     width: 90%;
-    height: 100px;
     margin: 0 auto;
+}
+.footer_nav {
     background-color: #e6ffe6;
+    display: flex;
 }
 .footer-logo {
     width: 10%;
     height: 100px;
-    float: left;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(../img/logo.png);
 }
 .footer-menu {
-    float: left;
     width: 80%;
     margin-left: 5%;
     list-style-type: none;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 .footer-menu-item {
     border: 1px solid white;
@@ -286,4 +272,129 @@ footer {
     display: block;
     text-align: right;
     margin-right: 30px;
+}
+
+@media only screen and (max-width: 670px){
+    p, li, .pickup-box-text { font-size: 0.8rem;
+    }
+    .phone {
+        display: none;
+    }
+    .header-menu {
+        display: none;
+    }
+    .logo {
+        width: 20%;
+        height: 80px;
+    }
+    .shop-subtitle {
+        display: inline-block;
+    }
+    .shop-body {
+        display: none;
+    }
+    .main-visual {
+        width:100%;
+        max-width: 100%;
+        height: 300px;
+    }
+    .pickup-body {
+        display: block;
+    }
+    .pickup-box {
+        width: 90%;
+        margin-top: 15px;
+    }
+    .about-box-u-text {
+        font-size: 0.8rem;
+        width: 50%;
+    }
+    .about-box-img {
+        width: 50%;
+        height: 200px;
+        margin-top: 10%;
+    }
+    .about-box-l {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .about-box-movie {
+        order: 1;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
+    }
+    .about-box-movie iframe {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+    }
+    .about-box-l-text {
+        order: 2;
+    }
+    br {
+        display: none;
+    }
+    .pr-body {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .pr-box-img {
+        height: 150px;
+    }
+    .company-body {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .company-box-left {
+        width: 100%;
+        order: 2;
+    }
+    .company-box-right {
+        order: 1;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
+    }
+    .company-text {
+        margin: 10px;
+    }
+    .company-box-right iframe {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+    }
+    .contact-table {
+        width: 90%;
+        font-size: 0.8rem;
+    }
+    footer {
+        height: auto;
+    }
+    .footer_nav {
+        width: 100%;
+    }
+    .footer-logo {
+        width: 20%;
+        margin-left: 5%;
+    }
+    .footer-menu {
+        width: 60%;
+        height: 100%;
+    }
+    .footer-menu-item {
+        width: 100%;
+        line-height: 30px;
+    }
+    .copyright {
+        background-color: white;
+    }
 }
